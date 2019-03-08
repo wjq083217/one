@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta content="text/html; charset=gb2312" />
+<title>Welcome</title>
+<style>
+.wel{
+background:url(image/ju.jpg);
+background-repeat:no-repeat;
+background-size:100% 100%;
+text-align:center;
+color:#FFFFFF ;
+font-family:幼圆;
+font-size:60px;
+font-weight:900;
+padding:180px 0px 180px 0px;
+border-radius:400px;
+box-shadow:0 0 60px 20px #ffffff inset;
+                            /* box-shadow: h-shadow v-shadow blur spread color inset;  *向框添加一个或多个阴影。
+											h-shadow	必需。水平阴影的位置。允许负值。
+											v-shadow	必需。垂直阴影的位置。允许负值。
+											blur	    可选。模糊距离。
+											spread		可选。阴影的尺寸。
+											color		可选。阴影的颜色。
+											inset		可选。将外部阴影 (outset) 改为内部阴影。*/
+}
+.button {                      /* 按钮*/
+	  display: inline-block;
+	  border-radius: 4px;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 28px;
+	  padding: 20px;
+	  width: 200px;
+	  transition: all 0.5s;      /*允许css的属性值在一定的时间区间内平滑地过渡*/
+	  cursor: pointer;           /*手形光标*/
+	  margin: 10px 5px 5px 5px;
+	  background: rgba(255, 228, 225, 0.6);
+	  box-shadow: 0 12px 16px rgba(0,0,0,0.3) ;
+}
+
+.button span {
+	  cursor: pointer;
+	  position: relative;
+	  transition: 0.5s;
+}
+.button:hover span {  padding-right: 25px; }
+
+.button span:after {
+	content:">>";
+	position: absolute;
+	opacity: 0;   /*设置 div 元素的不透明级别*/
+	transition: 0.5s;
+}
+.button:hover span:after {opacity: 1;}
+
+/*a:hover　  鼠标移动到的状态*/
+
+</style>
+
+<embed src="music/summer.mp3" width=0 height=0 type=audio/mpeg loop=true autostart=true />
+
+</head>
+<body>
+
+<div class="wel" >
+		<div style="background:rgba(255, 192 ,203,0.6);margin:50px;border-radius:50px; height:200px;line-height:3em;">
+			<h1> Welcome,my friend! </h1>
+		</div>
+
+		<button class="button" style="vertical-align:middle" onClick="javascript:window.location.href='my.html';">
+			<span>My World&nbsp;&nbsp;</span>
+		</button>
+</div>
+
+</body>
+</html>
